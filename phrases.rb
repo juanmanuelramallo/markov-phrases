@@ -1,0 +1,8 @@
+require 'yaml'
+require 'twitter'
+require_relative 'phrases/markov/builder'
+require_relative 'phrases/markov/generator'
+require_relative 'phrases/twitter/client'
+require_relative 'phrases/twitter/tweets'
+require_relative 'phrases/tasks/training'
+require_relative 'phrases/web'

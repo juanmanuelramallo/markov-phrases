@@ -1,0 +1,20 @@
+#!/usr/bin/ruby
+
+require 'dotenv/load'
+require 'yaml'
+require_relative '../phrases'
+
+5.times do
+  puts "Training Maurisio..."
+  Phrases::Tasks::Training.new(user: 'mauriciomacri', count: 200).train
+end
+
+5.times do
+  puts "Training CFK..."
+  Phrases::Tasks::Training.new(user: 'CFKArgentina', count: 200).train
+end
+
+5.times do
+  puts "Training CNN..."
+  Phrases::Tasks::Training.new(user: 'CNN', count: 200).train
+end
