@@ -4,7 +4,7 @@ module Phrases
       request = Rack::Request.new(env)
       params = Rack::Utils.parse_query(request.query_string)
       start_with = params['start_with'] || params['empezar_con']
-      words = params['words'].to_i || params['palabras']
+      words = params['words'].to_i || params['palabras'].to_i
 
       user = request.path.gsub(/\/+/, '')
       file_name = "data/#{user}.yml"
