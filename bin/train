@@ -18,3 +18,8 @@ end
   puts "Training CNN..."
   Phrases::Tasks::Training.new(user: 'CNN', count: 200).train
 end
+
+5.times do
+  puts "Training Donda..."
+  Phrases::Tasks::Training.new(user: 'vikidonda', count: 200).train
+end

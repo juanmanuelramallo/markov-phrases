@@ -7,7 +7,8 @@ module Phrases
       FILES = {
         'data/mauriciomacri.yml' => File.exists?('data/mauriciomacri.yml') ? YAML.load_file('data/mauriciomacri.yml') : {},
         'data/CFKArgentina.yml' => File.exists?('data/CFKArgentina.yml') ? YAML.load_file('data/CFKArgentina.yml') : {},
-        'data/CNN.yml' => File.exists?('data/CNN.yml') ? YAML.load_file('data/CNN.yml') : {}
+        'data/CNN.yml' => File.exists?('data/CNN.yml') ? YAML.load_file('data/CNN.yml') : {},
+        'data/vikidonda.yml' => File.exists?('data/vikidonda.yml') ? YAML.load_file('data/vikidonda.yml') : {}
       }
 
       def initialize(file_name: 'data/CNN.yml', start_with: nil, words_amount: 20)
